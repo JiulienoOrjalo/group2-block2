@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UPANG HUB</title>
+</head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/top icon 2.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			background: #f1f4f7;
+			font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+		}
+		nav{
+			background-color: #2e3e1b;
+			width: 100%;
+			height: auto;
+			padding: 20px;
+		}
+		nav span{
+		  color: white;
+		  font-size: 20px;
+		  text-transform: uppercase;
+		  font-weight: 500;
+		  height: 80px;
+		  padding-top: 50px;
+		}
+		h1{
+			text-align: center;
+			padding-top: 10%;
+			letter-spacing: 10px;	}
+		hr.rounded {
+		  border-top: 8px solid #977a00;
+		  border-radius: 2px;
+		  width: 15%;
+		}
+		.img{
+			width: 100%;
+			height: 100%;
+			padding-bottom: 15px;
+			position: relative;
+		}
+		.overlay {
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  background-color: #977a00;
+		  overflow: hidden;
+		  width: 100%;
+		  height: 100%;
+		  -webkit-transform: scale(0);
+		  -ms-transform: scale(0);
+		  transform: scale(0);
+		  -webkit-transition: .3s ease;
+		  transition: .3s ease;
+		}
+
+		.img:hover .overlay {
+		  -webkit-transform: scale(1);
+		  -ms-transform: scale(1);
+		  transform: scale(1);
+		  padding-bottom: 15px;
+		}
+
+		.text {
+		  color: white;
+		  font-size: 1.5vw;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  -webkit-transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  transform: translate(-50%, -50%);
+		  text-align: center;
+		}
+		@media (max-width: 1085px){
+			h1{
+				padding-top: 14%;
+			}
+		}
+		@media (max-width: 768px){
+			.text{
+				font-size: 4vw;
+			}
+			.img{
+				width: 100%;
+				height: 100%;
+				padding-bottom: 15px;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+			h1{
+				text-align: center;
+				padding-top: 25%;
+				letter-spacing: 10px;	}
+			hr.rounded {
+			  border-top: 8px solid #977a00;
+			  border-radius: 2px;
+			  width: 15%;
+			}
+		}
+	</style>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="outline: none;">
+  <div class="container-fluid ">
+   
+    <a class="navbar-brand" href="#"><img src="assets/logoorig.png" id="logotop"></a>
+
+
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+    <div class="wrapper">
+  <div class="hamburger-menu-button" onClick="toggleMenu()">
+      <div class="hamburger-menu"/> 
+  </div>
+</div>
+</button>
+
+    <div class="collapse navbar-collapse justify-content-start mt-4 " id="navbarNav" >
+        <ul class="nav justify-content-center  pl-3" id="choices">
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: white;">Discount</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: white;">Computation of Grades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: white;">Computation of Tuition Fee</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: white;">Courses Offered</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="#" style="color: white;">Gallery</a>
+          </li>
+         
+        </ul>
+    </div>
+
+
+  </div>
+</nav>
+	<div>
+		<h1>Gallery</h1>
+		<center><hr class="rounded"></center>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 images">
+				<img src="school/1.jpg" class="img">
+				<div class="overlay">
+					<div class="text">Athrium</div>
+				</div>
+			</div>
+			<div class="col-sm-4 images">
+				<img src="school/2.jpg" class="img">
+				<div class="overlay">
+					<div class="text">Field</div>
+				</div>
+			</div>
+			<div class="col-sm-4 images">
+				<img src="school/3.jpg" class="img">
+				<div class="overlay">
+					<div class="text">Amphitheater</div>
+				</div>
+			</div>
+			<div class="col-sm-4 images">
+				<img src="school/4.jpg" class="img">
+				<div class="overlay">
+					<div class="text">University Library</div>
+				</div>
+			</div>
+			<div class="col-sm-4 images">
+				<img src="school/5.jpg" class="img">
+				<div class="overlay">
+					<div class="text">Computer Laboratory</div>
+				</div>
+			</div>
+			<div class="col-sm-4 images">
+				<img src="school/6.jpg" class="img">
+				<div class="overlay">
+					<div class="text">Crime Laboratory</div>
+				</div>
+			</div>
+			<div class="col-sm-4 images">
+				<img src="school/7.jpg" class="img">
+				<div class="overlay">
+					<div class="text">College of Law</div>
+				</div>
+			</div>
+			<div class="col-sm-4 images">
+				<img src="school/8.jpg" class="img">
+				<div class="overlay">
+					<div class="text">HM Laboratory</div>
+				</div>
+			</div>
+			<div class="col-sm-4 images">
+				<img src="school/9.jpg" class="img">
+				<div class="overlay">
+					<div class="text">MAC Laboratory</div>
+				</div>
+			</div>
+			<div class="col-sm-4 images">
+				<img src="school/22.jpg" class="img">
+				<div class="overlay">
+					<div class="text">Phinma Avenue</div>
+				</div>
+			</div>
+			<div class="col-sm-4 images">
+				<img src="school/11.jpg" class="img">
+				<div class="overlay">
+					<div class="text">MBA Building</div>
+				</div>
+			</div>
+			<div class="col-sm-4 images">
+				<img src="school/33.jpg" class="img">
+				<div class="overlay">
+					<div class="text">NH Building</div>
+				</div>
+			</div>
+			<div class="col-sm-4 images">
+				<img src="school/55.jpg" class="img">
+				<div class="overlay">
+					<div class="text">Pathway</div>
+				</div>
+			</div>
+			<div class="col-sm-4 images">
+				<img src="school/66.jpg" class="img">
+				<div class="overlay">
+					<div class="text">Medical Laboratory</div>
+				</div>
+			</div>
+			<div class="col-sm-4 images">
+				<img src="school/77.jpg" class="img">
+				<div class="overlay">
+					<div class="text">Church</div>
+				</div>
+			</div>
+			<div class="col-sm-4 images">
+				<img src="school/88.jpg" class="img">
+				<div class="overlay">
+					<div class="text">Architecture Laboratory</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="bg-light text-center text-lg-start">
+  <div class="text-center p-3" style="background-color:#495555; color: white">
+    © 2020 Copyright:
+    <a class="text-light" href="#" style="text-decoration: none; color: white"><b>Group 2</b></a>
+    <div>
+  <a href="#" style="text-decoration: none; color: white;"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+  <a href="#" style="text-decoration: none; color: white;"><i class="fa fa-instagram" aria-hidden="true"></i></a>    
+  <a href="#" style="text-decoration: none; color: white;"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+  <a href="#" style="text-decoration: none; color: white;"><i class="fa fa-google" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
