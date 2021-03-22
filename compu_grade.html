@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <style>
       h5{
         color: black;
@@ -82,19 +83,19 @@
                 <h4 class="text-uppercase text-center">Computation of Grades</h4>  
             </div>  
             <div class="card-body">  
-                <form>  
+                <form id="myForm">  
                     <h5>Please input your grades</h5>
 
                     <div class="container">
                         <div class="row">
                           <div class="col-sm-4 p-2">
-                            <input type="number" placeholder="P1 Grade" class="form-control" id="guidance_fee" max="100" min="0" name="p1" required="" />
+                            <input type="number" placeholder="P1 Grade" class="form-control" id="p1grade" max="100" min="0" name="p1" required="" />
                           </div>
                           <div class="col-sm-4 p-2">
-                            <input type="number" placeholder="P2 Grade" class="form-control" min="0" max="100" id="guidance_fee" name="p2" required="" />
+                            <input type="number" placeholder="P2 Grade" class="form-control" min="0" max="100" id="p2grade" name="p2" required="" />
                           </div>
                           <div class="col-sm-4 p-2">
-                            <input type="number" placeholder="P3 Grade" class="form-control"  min="0" max="100" id="guidance_fee" name="p3" required="" />
+                            <input type="number" placeholder="P3 Grade" class="form-control"  min="0" max="100" id="p3grade" name="p3" required="" />
                           </div>
                         </div>
                       </div>
@@ -103,34 +104,89 @@
                         <div class="container">
                         <div class="row">
                           <div class="col-sm-2 p-2">
-                             <input type="number" placeholder="Average" class="form-control" id="guidance_fee" name="avg" required="" />
+                             <input type="number" placeholder="Average" class="form-control" id="average" name="avg" readonly="" />
                           </div>
 
                           <div class="col-sm-2 p-2">
-                            <input type="text" placeholder="Grade Status" class="form-control" id="guidance_fee" name="status" required="" />
+                            <input type="text" placeholder="Grade Equivalent" class="form-control" id="equivalent" name="equivalent" readonly="" />
                           </div>
                           <div class="col-sm-4">
-                          
+                            
                           </div>
                           <div class="col-sm-4">
                             
                           </div>
                         </div>
                       </div>
-
-  
-                    </div>  
-                    <div style="margin: 20px; text-align: right;">  
-                        <button type="reser" class="btn btn-danger rounded-0">Clear</button>  
-                        <button type="submit" class="btn btn-primary rounded-0">Compute</button>
-                    </div>  
+                    </div> 
                 </form>  
+                   <div style="margin: 20px; text-align: right;">  
+                          <button onclick="clearbutt()" class="btn btn-danger rounded-0">Clear</button>  
+                          <button onclick="calc()" class="btn btn-primary rounded-0">Compute</button>
+                    </div>  
+                  <script>
+
+   function calc(){
+                       var p1 = parseFloat(document.getElementById("p1grade").value);
+                       var p2 = parseFloat(document.getElementById("p2grade").value);
+                       var p3 = parseFloat(document.getElementById("p3grade").value);
+
+                        var ave = (p1 * 0.33) + (p2 * 0.33) + (p3 * 0.34);
+
+                        document.getElementById("average").value = ave.toFixed(2);
+
+                        if(ave >=96.0 && ave<=100){
+                          document.getElementById("equivalent").value = 1.00;
+                          swal("","STUDENT PASSED!", "success");
+                        }
+                        else if(ave >=91.5 && ave <=95.9){
+                          document.getElementById("equivalent").value = 1.25;
+                          swal("","STUDENT PASSED!", "success");
+                        }
+                        else if(ave >=87.0 && ave <=91.4){
+                          document.getElementById("equivalent").value = 1.50;
+                          swal("","STUDENT PASSED!", "success");
+                        }
+                        else if(ave >= 82.5 && ave <= 86.9){
+                          document.getElementById("equivalent").value = 1.75;
+                          swal("","STUDENT PASSED!", "success");
+                        }
+                        else if(ave >= 78.0 && ave <= 82.4){
+                          document.getElementById("equivalent").value = 2.00;
+                          swal("","STUDENT PASSED!", "success");
+                        }
+                        else if(ave >= 73.5 && ave <= 77.9){
+                          document.getElementById("equivalent").value = 2.25;
+                          swal("", "STUDENT PASSED!", "success");
+                        }
+                        else if(ave >= 69.0 && ave <= 73.4){
+                          document.getElementById("equivalent").value = 2.50;
+                          swal("", "STUDENT PASSED!", "success");
+                        }
+                        else if(ave >= 64.5 && ave <= 68.9){
+                          document.getElementById("equivalent").value = 2.75;
+                          swal("", "Your student PASSED!", "success");
+                        }
+                        else if(ave >= 60.0 && ave <=64.4){
+                          document.getElementById("equivalent").value = 3.00;
+                          swal("", "STUDENT PASSED!", "success");
+                        }
+                        else if(ave >= 0.0 && ave <= 59.9){
+                          document.getElementById("equivalent").value = 5.00;
+                          swal("", "STUDENT FAILED!", "warning");
+                        }
+                  }
+
+                  function clearbutt(){
+                     document.getElementById("myForm").reset();
+                  }
+                    </script>
             </div>  
         </div>  
     </div>  
   </div>
 </div>
-</div>
+</div><br><br>
 <footer class="bg-light text-center text-lg-start">
   <div class="text-center p-3" style="background-color:#495555; color: white">
     © 2020 Copyright:
@@ -164,4 +220,5 @@
     </script>
 
     <script src="main.js"></script>
+
 </html>
