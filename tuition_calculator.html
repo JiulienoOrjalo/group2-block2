@@ -82,7 +82,7 @@
               <form>
                 <div class="form-group">
                   <label for="tuitionFee">Tuition For the Semster</label>
-                  <input name="inputTuitionFee" type="text" class="form-control" id="inputTuitionFee" aria-describedby="tuitionHelp" placeholder="Enter your tuition" required="" >
+                  <input name="inputTuitionFee" type="number" class="form-control" id="inputTuitionFee" aria-describedby="tuitionHelp" placeholder="Enter your tuition" required="" >
                   <small id="tuitionHelp" class="form-text text-muted">We'll never share your inputs to anyone.</small>
                 </div>
                 <div class="form-group">
@@ -95,7 +95,8 @@
                     <option value="100">Handog Kaibigan Discount - 100%</option>
                   </select>
                 </div>
-                <button type="submit" class="btn btn-primary" onclick="submitValue()">Submit</button>
+                <button type="submit" id="calculateTuitionFee" class="btn btn-primary" onclick="calculateTuitionFee()">Submit</button>
+                <button type="button" id="clearInputFields" class="btn btn-danger" onclick="calculateTuitionFee()">Clear</button>
               </form>
             </div>  
         </div>  
@@ -119,7 +120,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript">
       const parallax = 3;
       const container = document.querySelector(".banner-area");

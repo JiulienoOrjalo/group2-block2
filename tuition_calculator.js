@@ -4,40 +4,32 @@ function submitValue(){
     var selectedValue = document.getElementById("HandogKaibiganDiscount").value;
     alert(inputTuitionFee + " " + selectedValue);
   }
-// Reserve Function for Feature(?)
-$('#ShowBtn').click(function(e){
-    e.preventDefault();
-    Swal.fire({
-title: 'Submit your Github username',
-input: 'text',
-inputAttributes: {
-autocapitalize: 'off'
-},
-showCancelButton: true,
-confirmButtonText: 'Look up',
-showLoaderOnConfirm: true,
-preConfirm: (login) => {
-return fetch(`//api.github.com/users/${login}`)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error(response.statusText)
-    }
-    return response.json()
-  })
-  .catch(error => {
-    Swal.showValidationMessage(
-      `Request failed: ${error}`
-    )
-  })
-},
-allowOutsideClick: () => !Swal.isLoading()
-}).then((result) => {
-if (result.isConfirmed) {
-Swal.fire({
-  title: `${result.value.login}'s avatar`,
-  imageUrl: result.value.avatar_url
+$('#calculateTuitionFee').click(function(e){
+  e.preventDefault();
+  var inputTuitionFee = document.getElementById("inputTuitionFee").value;
+  var selectedValue = document.getElementById("HandogKaibiganDiscount").value / 100;
+  var totalDiscount = inputTuitionFee - (inputTuitionFee * selectedValue).toFixed(2);
+  swal({
+    title: "HK Discount",
+    text: "Tuition Fee when HK Discount is applied: ₱" + totalDiscount,
+    icon: "success",
+    closeOnClickOutside: false,
+    closeOnEsc: false,
+    allowOutsideClick: false,
 })
-}
+var inputTuitionFee = document.getElementById("inputTuitionFee").value = '';
+var selectedValue = document.getElementById("HandogKaibiganDiscount").value = '';
+});
+$('#clearInputFields').click(function(e){
+  e.preventDefault();
+  var inputTuitionFee = document.getElementById("inputTuitionFee").value = '';
+  var selectedValue = document.getElementById("HandogKaibiganDiscount").value = '';
+  swal({
+    title: "Clear Fields",
+    text: "Input and Select Fields are now empty",
+    icon: "success",
+    closeOnClickOutside: false,
+    closeOnEsc: false,
+    allowOutsideClick: false,
 })
 });
-// Landing Alert.
