@@ -33,3 +33,15 @@ $('#clearInputFields').click(function(e){
     allowOutsideClick: false,
 })
 });
+$('#buttonHelp').click(function(e){
+  e.preventDefault();
+  swal({
+    title: "About HK Discount",
+    text: "If you're interested applying HK or renewing HK to get a discount for your tuition. You can use the calculator provided. Thank you!",
+    icon: "info",
+    button: "Understood!",
+    closeOnClickOutside: false,
+  closeOnEsc: false,
+  allowOutsideClick: false,
+  });
+});
