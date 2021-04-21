@@ -217,15 +217,6 @@
 
 
  
-		}		
-		h2{
-			color: #977a00;
-		}
-		strong{
-			color: #2e3e1b;
-		}
-		h3{
-			color: #2e3e1b;
 		}
 
 	</style>
@@ -238,11 +229,13 @@
 			<div class="navbar-header">
 				<img src="logoorig.png"><a class="navbar-brand"></a>
 				<table>
-			<td><a href="index.html">Home</a></td>
-			<td><a href="compu_grade.html">Computation of Grades </a></td>
-			<td><a href="tuition_calculator.html">Computation of Tuition Fee </a></td>
-			<td><a href="CourseOffered.html"  class="active">Courses Offered </a></td>
-			<td><a href="gallery.html">Gallery</a></td>
+			<td><a href="index.php">Home</a></td>
+			<td><a href="compu_grade.php">Computation of Grades </a></td>
+			<td><a href="tuition_calculator.php">Computation of Tuition Fee </a></td>
+			<td><a href="CourseOffered.php"  class="active">Courses Offered </a></td>
+			<td><a href="gallery.php">Gallery</a></td>
+			<td><a href="user.php">User</a></td>
+
 		</table>
 			</div>
 		</div>
@@ -264,16 +257,15 @@
 			</div>
 			<div class="clear"></div>
 		</div>
-		
 		<ul class="nav menu">
-			<li style="text-transform: uppercase; font-size: 1.5vw; background-color: rgba(0,0,0,0.2); padding: 10px;">Departments</li>
-					<li><a class="" href="CourseOffered.html">CITE</a></li>
-					<li><a class="" href="CMA.html">CMA</a></li>
-					<li><a class="" href="CEA.html">CEA</a></li>
-					<li><a class="" href="CHS.html">CHS</a></li>
-					<li><a class="" href="CSS.html">CSS</a></li>
-					<li><a class="" href="SHS.html">SHS</a></li>
-					<li class="active"><a class="" href="Admission.html">Admission Requirements</a></li>	
+			<li style="text-transform: uppercase; font-size: 1.5vw; background-color: rgba(0,0,0,0.2); padding: 10px; ">Departments</li>
+					<li><a class="" href="CourseOffered.php">CITE</a></li>
+					<li><a class="" href="CMA.php">CMA</a></li>
+					<li class="active"><a class="" href="CEA.php">CEA</a></li>
+					<li><a class="" href="CHS.php">CHS</a></li>
+					<li><a class="" href="CSS.php">CSS</a></li>
+					<li><a class="" href="SHS.php">SHS</a></li>
+					<li><a class="" href="Admission.php">Admission Requirements</a></li>		
 	</li>
 		</ul></ul>
 	</div>
@@ -283,46 +275,35 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-8">
-				<h1 class="page-header">Admission Requirements</h1>
+				<h1 class="page-header"><p> College Programs of</p>College of Engineering and Architecture</h1>
 			</div>
 		</div>	
+
 		<div class="jumbotron">
-			<h3>Official Enrollment Steps</h3>
-			<h2>01</h2>
-			<p><strong>MARKETING DEPARTMENT</strong><br>1.1 Fill up Student Permanent Record (SPR) & Info Sheet.<br>
-				1.2 Verification of Required Documents (if available):
-			<ol type="i">
-				<li>Form 138</li>
-				<li>NSO Birth Certificate</li>
-				<li>For Handog Kaibigan (HK) Scholars</li>
-				<ol type="I">
-					<li>HK Certificate</li>
-					<li>Certificate of Indigency</li>
-				</ol>
-			</ol>
-		</p>
-	</div>
-		<div class="jumbotron">
-			<h2>02</h2>
-		<p><strong>Advising</strong>(For Transferees only)<br>2.1 Go to the Dean's Office (See Dean or Program Head) for subject crediting</p>
+			<h3>Architecture</h3>
+			<p style="font-size: 15px;">The Bachelor of Science in Architecture program is a five-year course that equips students with in-depth knowledge and skills to prepare them for a career in architecture, interior design, physical planning, landscaping, urban planning, or building-construction. Through our program, students will create studies to help them learn important skills in conceptualizing and planning structural designs. Their studies may have to do with the initial construction of a building, or the enlargement, renovation, remodeling, restoration or alteration of an existing structure. Furthermore, the program will equip students with knowledge in administering and supervising projects.</p>
 		</div>
 		<div class="jumbotron">
-		<h2>03</h2>
-		<p><strong>Registrar & Finance</strong><br>3.1 Submission of Remaining requirements:
-			<ol type="a">
-				<li>Form 138</li>
-				<li>NSO Birth Certificate</li>
-				<li>For Handog Kaibigan (HK) Scholars</li>
-				<ol type="i">
-					<li>HK Certificate</li>
-					<li>Certificate of Indigency</li>
-				</ol>
-			</ol><br>3.2 Downpayment<br>
-			<ol type="i">
-				<li> If enrollee has Slot Reservation:<br>Non-scholars: pay an additional P2,000.00 downpayment to get ID & 1 set of uniform For scholars: can pay P750.00 for ID or P1,500 for both ID & 1 set of uniform.</li>
-				<li>If enrollee has NO Slot Reservation:<br>Non-scholars: pay P2,500.00 downpayment to get ID & 1 set of uniform For HK scholars: can pay P750.00 for ID or P1,500 for both ID & 1 set of uniform</li>
-			</ol><br>3.3 Printing of Official Registration Form (ORF) or Temporary Registration Form (TRF) in case schedule is not yet ready.</p>
+			<h3>Civil Engineering</h3>
+			<p style="font-size: 15px;">The Bachelor of Science in Civil Engineering program is a four-year course that teaches students the knowledge, skills, and training necessary for designing, constructing and maintaining buildings, and  public infrastructure and facilities. We also develop their zest for excellence and lifelong training necessary for adapting to civil engineering trends. Graduates of the BS Civil Engineering program must  take the board exams conducted by the Professional Regulation Commission to become professionals.</p>
 		</div>
+		<div class="jumbotron">
+			<h3>Computer Engineering</h3>
+			<p style="font-size: 15px;">The Bachelor of Science in Computer Engineering program is a five-year course that provides its students with a strong foundation in science, mathematics, and engineering. The program trains students to create and deliver solutions in the field of embedded systems technology. It also teaches them how to integrate hardware with software. The goal of the program is to have its graduates employed in businesses that inspire lifelong learning in Computer Engineering, who are good communicators and aware of their social and ethical responsibilities as professionals.</p>
+		</div>
+		<div class="jumbotron">
+			<h3>Electrical Engineering</h3>
+			<p style="font-size: 15px;">The Bachelor of Science in Electrical Engineering program is a four-year course that focuses on teaching the following to students: advanced power system analysis, (including power generation,  transmission distribution, and utilization) and information and communication technology. Our program will hone their knowledge and skills in these areas to help them adapt faster to the changing environment. We will also teach them management skills to pave the way for a clearer path to professional growth. Finally, we will instill in them the values of efficiency, sustainability, and safety for all the projects that they will be undertaking in their career. Graduates of the BS Electrical Engineering program must take the board exams conducted by the Professional Regulation Commission to qualify as professionals.</p>
+		</div>
+		<div class="jumbotron">
+			<h3>Electronics and Communication Engineering</h3>
+			<p style="font-size: 15px;">The PHINMA UPang BSECE program develops students into applications-oriented professionals that provide service and electronic solutions to challenging technical problems in the fields of the profession. The program continually aims to produce employable individuals with good communication skills, highly immersed in real-work scenarios through experiential learning, and ethical professionals that follow established ethical standards in the practice of the electronics engineering profession.</p>
+		</div>
+		<div class="jumbotron">
+			<h3>Mechanical Engineering</h3>
+			<p style="font-size: 15px;">The Bachelor of Science in Mechanical Engineering program focuses on teaching students the processes and systems necessary for building machinery including aircrafts, spacecrafts, watercrafts, trains, medical equipment, and home appliances, as well as textiles. We provide students with theories in chemistry and physics that will help them as they design and develop machineries that people will use. Graduates of the BS Mechanical Engineering program must  take the board exams conducted by the Professional Regulation Commission to become professionals.</p>
+		</div>
+		
 		
 </body>
 </html>

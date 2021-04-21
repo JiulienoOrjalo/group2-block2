@@ -1,6 +1,7 @@
+<?php include ('UP_server.php')?>
 <!doctype html>
 <html lang="en">
-<title>Tuition Fee</title>
+<title>Users</title>
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <style>
       h5{
         color: black;
@@ -25,14 +27,67 @@
       }
       .background{
         background-color: #F1f4f7;
-      }
+      }* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 70%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  outline: none;
+}
+#submit{
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 20%;
+  font-size: 16px;
+  padding: 12px 20px 12px ;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+#submit:hover{
+  color: white;
+  background-color: #977a00;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
     </style> 
   </head>
-  <body style="background-color: #F1f4f7;">
-    <!-- NAV HEADER -->
+  <body style="background-color: #F1f4f7;"> 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="outline: none;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html"><img src="assets/logoorig.png" id="logotop"></a>
+   
+    <a class="navbar-brand" href="index.php"><img src="assets/logoorig.png" id="logotop"></a>
+
+
+
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
     <div class="wrapper">
@@ -45,65 +100,110 @@
 <div class="collapse navbar-collapse justify-content-start mt-4 " id="navbarNav" >
   <ul class="nav justify-content-center" id="choices">
     <li class="nav-item">
-      <a class="nav-link" href="index.html" style="color: white;">Home</a>
+      <a class="nav-link" href="index.php" style="color: white;">Home</a>
     </li>
 
     <li class="nav-item">
-      <a class="nav-link" href="compu_grade.html" style="color: white;">Computation of Grades</a>
+      <a class="nav-link" href="compu_grade.php" style="color: white;">Computation of Grades</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="tuition_calculator.html" style="color: white;">Computation of Tuition Fee</a>
+      <a class="nav-link" href="tuition_calculator.php" style="color: white;">Computation of Tuition Fee</a>
     </li>
 
     <li class="nav-item">
-      <a class="nav-link" href="CourseOffered.html" style="color: white;">Courses Offered</a>
+      <a class="nav-link" href="CourseOffered.php" style="color: white;">Courses Offered</a>
     </li>
     
     <li class="nav-item">
-      <a class="nav-link" href="gallery.html" style="color: white;">Gallery</a>
+      <a class="nav-link" href="gallery.php" style="color: white;">Gallery</a>
     </li>
+
+     <li class="nav-item">
+        <a class="nav-link active" href="user.php" style="color: white;">User</a>
+      </li>
 
   </ul>
 </div>
 
   </div>
 </nav>
-<!-- END OF NAV HEADER -->
-    <div class="background" >
-    <div class="container">
+   
+<div class="background" >
+<div class="container">
   <div class="row">
     <div class="container py-5"> 
        <br><br><br><br>
         <div class="card">  
             <div class="card-header bg-success text-white">  
-                <h4 class="text-uppercase text-center">Tuition Fee</h4>  
+                <h4 class="text-uppercase text-center">Number of Users</h4>  
             </div>  
-            <div class="card-body">  
-              <form>
-                <div class="form-group">
-                  <label for="tuitionFee">Tuition For the Semster</label>
-                  <input name="inputTuitionFee" type="number" class="form-control" id="inputTuitionFee" aria-describedby="tuitionHelp" placeholder="Enter your tuition" required="" >
-                  <small id="tuitionHelp" class="form-text text-muted">We'll never share your inputs to anyone.</small>
-                </div>
-                <div class="form-group">
-                  <label for="HandogKaibiganDiscount">Select a discount</label>
-                  <select name="cars" id="HandogKaibiganDiscount" class="form-control" required="">
-                    <option value="">Select an option</option>
-                    <option value="25">Handog Kaibigan Discount - 25%</option>
-                    <option value="50">Handog Kaibigan Discount - 50%</option>
-                    <option value="75">Handog Kaibigan Discount - 75%</option>
-                    <option value="100">Handog Kaibigan Discount - 100%</option>
-                  </select>
-                </div>
-                <button type="submit" id="calculateTuitionFee" class="btn btn-primary" onclick="calculateTuitionFee()">Submit</button>
-                <button type="button" id="clearInputFields" class="btn btn-danger" onclick="calculateTuitionFee()">Clear</button>
-                <button type="button" id="buttonHelp" class="btn btn-info float-right">Help</button>
-              </form>
+            <div class="card-body"> 
+
+
+
+<form method="post">            
+<div style="justify-content: center; text-align: center;">
+<input type="text" id="myInput" placeholder="Search for names.." name="user">
+<input type="submit" id="submit" name="search">
+</div>
+<?php
+
+if (isset($_POST['search'])== null) 
+{
+ 
+  $connection=mysqli_connect("localhost","root","","upang_hub");
+  $result = mysqli_query($connection, "SELECT * FROM tbl_account");
+  $rowcount = mysqli_num_rows($result);
+}
+else{
+  $user = $_POST['user'];
+  $connection=mysqli_connect("localhost","root","","upang_hub");
+  $result = mysqli_query($connection, "SELECT * FROM tbl_account WHERE username LIKE '%$user%'");
+  $rowcount = mysqli_num_rows($result);
+}
+ 
+?>
+
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">USERNAME</th>
+  </tr>
+
+<?php
+
+
+
+for ($i=1; $i<=$rowcount; $i++)
+{   
+
+    $row = mysqli_fetch_array($result);
+
+  
+ ?>
+  <tr>
+   <td><?php echo $row['username']?></td>
+ </tr>
+
+<?php    
+}
+
+
+?>
+
+
+
+</table>
+
+</form>
+
             </div>  
         </div>  
     </div>  
   </div>
 </div>
+</div>
+<br><br><br><br><br><br><br><br><br>
 <footer class="bg-light text-center text-lg-start" style="width: 100%; bottom: 0; height: auto; position: fixed;">
   <div class="text-center p-3" style="background-color:#495555; color: white">
     © 2020 Copyright:
@@ -121,18 +221,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script type="text/javascript">
-      const parallax = 3;
-      const container = document.querySelector(".banner-area");
-      window.addEventListener("scroll", () => {
-        console.log("Scrolling");
-        container.style.setProperty(
-          "background-position-y",
-          `${(window.scrollY / parallax) * -1}px`
-        );
-      });
-    </script>
-    <script src="tuition_calculator.js"></script>
+
+
     <script src="main.js"></script>
+
 </html>

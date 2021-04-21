@@ -222,6 +222,7 @@
 	</style>
 	
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
 </head>
 <body>
 	<nav class="navbar navbar-custom navbar-fixed-top">
@@ -229,11 +230,12 @@
 			<div class="navbar-header">
 				<img src="logoorig.png"><a class="navbar-brand"></a>
 				<table>
-			<td><a href="index.html">Home</a></td>
-			<td><a href="compu_grade.html">Computation of Grades </a></td>
-			<td><a href="tuition_calculator.html">Computation of Tuition Fee </a></td>
-			<td><a href="CourseOffered.html"  class="active">Courses Offered </a></td>
-			<td><a href="gallery.html">Gallery</a></td>
+			<td><a href="index.php">Home</a></td>
+			<td><a href="compu_grade.php">Computation of Grades </a></td>
+			<td><a href="tuition_calculator.php">Computation of Tuition Fee </a></td>
+			<td><a href="CourseOffered.php"  class="active">Courses Offered </a></td>
+			<td><a href="gallery.php">Gallery</a></td>
+			<td><a href="user.php">User</a></td>
 		</table>
 			</div>
 		</div>
@@ -257,13 +259,13 @@
 		</div>
 		<ul class="nav menu">
 			<li style="text-transform: uppercase; font-size: 1.5vw; background-color: rgba(0,0,0,0.2); padding: 10px; ">Departments</li>
-					<li><a class="" href="CourseOffered.html">CITE</a></li>
-					<li><a class="" href="CMA.html">CMA</a></li>
-					<li class="active"><a class="" href="CEA.html">CEA</a></li>
-					<li><a class="" href="CHS.html">CHS</a></li>
-					<li><a class="" href="CSS.html">CSS</a></li>
-					<li><a class="" href="SHS.html">SHS</a></li>
-					<li><a class="" href="Admission.html">Admission Requirements</a></li>		
+					<li><a class="" href="CourseOffered.php">CITE</a></li>
+					<li><a class="" href="CMA.php">CMA</a></li>
+					<li><a class="" href="CEA.php">CEA</a></li>
+					<li class="active"><a class="" href="CHS.php">CHS</a></li>
+					<li><a class="" href="CSS.php">CSS</a></li>
+					<li><a class="" href="SHS.php">SHS</a></li>
+					<li><a class="" href="Admission.php">Admission Requirements</a></li>		
 	</li>
 		</ul></ul>
 	</div>
@@ -273,35 +275,26 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-8">
-				<h1 class="page-header"><p> College Programs of</p>College of Engineering and Architecture</h1>
+				<h1 class="page-header"><p> College Programs of</p>College of Health Sciences</h1>
 			</div>
 		</div>	
 
 		<div class="jumbotron">
-			<h3>Architecture</h3>
-			<p style="font-size: 15px;">The Bachelor of Science in Architecture program is a five-year course that equips students with in-depth knowledge and skills to prepare them for a career in architecture, interior design, physical planning, landscaping, urban planning, or building-construction. Through our program, students will create studies to help them learn important skills in conceptualizing and planning structural designs. Their studies may have to do with the initial construction of a building, or the enlargement, renovation, remodeling, restoration or alteration of an existing structure. Furthermore, the program will equip students with knowledge in administering and supervising projects.</p>
+			<h3>Medical Laboratory Science</h3>
+			<p style="font-size: 15px;">The Bachelor of Science in Medical Laboratory Science is a four-year program that provides knowledge in the fields of Clinical Chemistry, Hematology, Microbiology, Immunohematology, Immunology and Serology, Urinalysis, Clinical Microscopy, Parasitology, Cytology, and Histopathology. During their fourth year, students undergo an internship program in a CHED-accredited training laboratory where they rotate between sections. Graduates of the program must take the board exams conducted by the Professional Regulation Commission to qualify as registered medical technologists.</p>
 		</div>
 		<div class="jumbotron">
-			<h3>Civil Engineering</h3>
-			<p style="font-size: 15px;">The Bachelor of Science in Civil Engineering program is a four-year course that teaches students the knowledge, skills, and training necessary for designing, constructing and maintaining buildings, and  public infrastructure and facilities. We also develop their zest for excellence and lifelong training necessary for adapting to civil engineering trends. Graduates of the BS Civil Engineering program must  take the board exams conducted by the Professional Regulation Commission to become professionals.</p>
+			<h3>Nursing</h3>
+			<p style="font-size: 15px;">The BS Nursing program is a four-year course where we teach students nursing concepts alongside Related Learning Experiences (RLE). Through our outcome-based curriculum, we train students to become competent through simulated clinical and active learning activities. Our program also provides an intensive nursing practicum that will make our students skilled, refined, and worthy of entering the nursing profession.</p>
 		</div>
 		<div class="jumbotron">
-			<h3>Computer Engineering</h3>
-			<p style="font-size: 15px;">The Bachelor of Science in Computer Engineering program is a five-year course that provides its students with a strong foundation in science, mathematics, and engineering. The program trains students to create and deliver solutions in the field of embedded systems technology. It also teaches them how to integrate hardware with software. The goal of the program is to have its graduates employed in businesses that inspire lifelong learning in Computer Engineering, who are good communicators and aware of their social and ethical responsibilities as professionals.</p>
+			<h3>Pharmacy</h3>
+			<p style="font-size: 15px;">The Bachelor of Science in Pharmacy program is a four-year course which focuses on teaching necessary foundational knowledge for pharmaceutical product development.  Through our program, we teach students on the essentials of pharmaceutical chemistry, pharmaceutics, and the life sciences. During their fourth year, we will assign students to intern in various CHED-accredited affiliated establishments to learn about the rigors of pharmacy practice. Their internship will expose them to various practice areas and prepare them for the roles they may take on after graduation. Graduates of the BS Pharmacy program must take the board exams conducted by the Professional Regulation Commission to qualify as registered pharmacists.</p>
 		</div>
 		<div class="jumbotron">
-			<h3>Electrical Engineering</h3>
-			<p style="font-size: 15px;">The Bachelor of Science in Electrical Engineering program is a four-year course that focuses on teaching the following to students: advanced power system analysis, (including power generation,  transmission distribution, and utilization) and information and communication technology. Our program will hone their knowledge and skills in these areas to help them adapt faster to the changing environment. We will also teach them management skills to pave the way for a clearer path to professional growth. Finally, we will instill in them the values of efficiency, sustainability, and safety for all the projects that they will be undertaking in their career. Graduates of the BS Electrical Engineering program must take the board exams conducted by the Professional Regulation Commission to qualify as professionals.</p>
+			<h3>Physical Therapy</h3>
+			<p style="font-size: 15px;">The Bachelor of Science in Physical Therapy program is a four-year degree course that provides students with medical knowledge and rehabilitation training necessary for their future profession. We hone their skills through simulated clinical and active learning activities in a dynamic learning community, under an outcomes-based curriculum. Through the course’s internship program, we assign students to different CHED-accredited affiliated center where they will interact with patients that have neurological, muscoskeletal, cardiopulmonary conditions in need of rehabilitation. Graduates of the BS Physical Therapy program must take the board exams conducted by the Professional Regulation Commission to qualify as Registered Physical Therapists.</p>
 		</div>
-		<div class="jumbotron">
-			<h3>Electronics and Communication Engineering</h3>
-			<p style="font-size: 15px;">The PHINMA UPang BSECE program develops students into applications-oriented professionals that provide service and electronic solutions to challenging technical problems in the fields of the profession. The program continually aims to produce employable individuals with good communication skills, highly immersed in real-work scenarios through experiential learning, and ethical professionals that follow established ethical standards in the practice of the electronics engineering profession.</p>
-		</div>
-		<div class="jumbotron">
-			<h3>Mechanical Engineering</h3>
-			<p style="font-size: 15px;">The Bachelor of Science in Mechanical Engineering program focuses on teaching students the processes and systems necessary for building machinery including aircrafts, spacecrafts, watercrafts, trains, medical equipment, and home appliances, as well as textiles. We provide students with theories in chemistry and physics that will help them as they design and develop machineries that people will use. Graduates of the BS Mechanical Engineering program must  take the board exams conducted by the Professional Regulation Commission to become professionals.</p>
-		</div>
-		
 		
 </body>
 </html>

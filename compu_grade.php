@@ -33,7 +33,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="outline: none;">
   <div class="container-fluid">
    
-    <a class="navbar-brand" href="index.html"><img src="assets/logoorig.png" id="logotop"></a>
+    <a class="navbar-brand" href="index.php"><img src="assets/logoorig.png" id="logotop"></a>
 
 
 
@@ -49,22 +49,25 @@
 <div class="collapse navbar-collapse justify-content-start mt-4 " id="navbarNav" >
   <ul class="nav justify-content-center" id="choices">
     <li class="nav-item">
-      <a class="nav-link" href="index.html" style="color: white;">Home</a>
+      <a class="nav-link" href="index.php" style="color: white;">Home</a>
     </li>
 
     <li class="nav-item">
-      <a class="nav-link active" href="compu_grade.html" style="color: white;">Computation of Grades</a>
+      <a class="nav-link active" href="compu_grade.php" style="color: white;">Computation of Grades</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="tuition_calculator.html" style="color: white;">Computation of Tuition Fee</a>
+      <a class="nav-link" href="tuition_calculator.php" style="color: white;">Computation of Tuition Fee</a>
     </li>
 
     <li class="nav-item">
-      <a class="nav-link" href="CourseOffered.html" style="color: white;">Courses Offered</a>
+      <a class="nav-link" href="CourseOffered.php" style="color: white;">Courses Offered</a>
     </li>
     
     <li class="nav-item">
-      <a class="nav-link" href="gallery.html" style="color: white;">Gallery</a>
+      <a class="nav-link" href="gallery.php" style="color: white;">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="user.php" style="color: white;">Users</a>
     </li>
 
   </ul>

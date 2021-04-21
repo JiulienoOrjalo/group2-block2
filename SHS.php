@@ -229,11 +229,12 @@
 			<div class="navbar-header">
 				<img src="logoorig.png"><a class="navbar-brand"></a>
 				<table>
-			<td><a href="index.html">Home</a></td>
-			<td><a href="compu_grade.html">Computation of Grades </a></td>
-			<td><a href="tuition_calculator.html">Computation of Tuition Fee </a></td>
-			<td><a href="CourseOffered.html"  class="active">Courses Offered </a></td>
-			<td><a href="gallery.html">Gallery</a></td>
+			<td><a href="index.php">Home</a></td>
+			<td><a href="compu_grade.php">Computation of Grades </a></td>
+			<td><a href="tuition_calculator.php">Computation of Tuition Fee </a></td>
+			<td><a href="CourseOffered.php"  class="active">Courses Offered </a></td>
+			<td><a href="gallery.php">Gallery</a></td>
+			<td><a href="user.php">User</a></td>
 		</table>
 			</div>
 		</div>
@@ -257,13 +258,13 @@
 		</div>
 		<ul class="nav menu">
 			<li style="text-transform: uppercase; font-size: 1.5vw; background-color: rgba(0,0,0,0.2); padding: 10px; ">Departments</li>
-					<li><a class="" href="CourseOffered.html">CITE</a></li>
-					<li><a class="" href="CMA.html">CMA</a></li>
-					<li><a class="" href="CEA.html">CEA</a></li>
-					<li><a class="" href="CHS.html">CHS</a></li>
-					<li><a class="" href="CSS.html">CSS</a></li>
-					<li class="active"><a class="" href="SHS.html">SHS</a></li>
-					<li><a class="" href="Admission.html">Admission Requirements</a></li>	
+					<li><a class="" href="CourseOffered.php">CITE</a></li>
+					<li><a class="" href="CMA.php">CMA</a></li>
+					<li><a class="" href="CEA.php">CEA</a></li>
+					<li><a class="" href="CHS.php">CHS</a></li>
+					<li><a class="" href="CSS.php">CSS</a></li>
+					<li class="active"><a class="" href="SHS.php">SHS</a></li>
+					<li><a class="" href="Admission.php">Admission Requirements</a></li>	
 	</li>
 		</ul></ul>
 	</div>

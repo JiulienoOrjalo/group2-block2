@@ -4,7 +4,7 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>UPang Hub</title>
+	<title>UPangHub</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -214,10 +214,13 @@
  			padding-bottom: 10px;
  			padding-left: 9px;
  			padding-right: 9px;
+
+
+ 
 		}
+
 	</style>
 	
-
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 </head>
 <body>
@@ -225,12 +228,13 @@
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<img src="logoorig.png"><a class="navbar-brand"></a>
-			<table>
-			<td><a href="index.html">Home</a></td>
-			<td><a href="compu_grade.html">Computation of Grades </a></td>
-			<td><a href="tuition_calculator.html">Computation of Tuition Fee </a></td>
-			<td><a href="CourseOffered.html"  class="active">Courses Offered </a></td>
-			<td><a href="gallery.html">Gallery</a></td>
+				<table>
+			<td><a href="index.php">Home</a></td>
+			<td><a href="compu_grade.php">Computation of Grades </a></td>
+			<td><a href="tuition_calculator.php">Computation of Tuition Fee </a></td>
+			<td><a href="CourseOffered.php"  class="active">Courses Offered </a></td>
+			<td><a href="gallery.php">Gallery</a></td>
+			<td><a href="user.php">User</a></td>
 		</table>
 			</div>
 		</div>
@@ -252,16 +256,15 @@
 			</div>
 			<div class="clear"></div>
 		</div>
-		
 		<ul class="nav menu">
-			<li style="text-transform: uppercase; font-size: 1.5vw; background-color: rgba(0,0,0,0.2); padding: 10px;">Departments</li>
-					<li class="active"><a class="" href="CourseOffered.html">CITE</a></li>
-					<li><a class="" href="CMA.html">CMA</a></li>
-					<li><a class="" href="CEA.html">CEA</a></li>
-					<li><a class="" href="CHS.html">CHS</a></li>
-					<li><a class="" href="CSS.html">CSS</a></li>
-					<li><a class="" href="SHS.html">SHS</a></li>
-					<li><a class="" href="Admission.html">Admission Requirements</a></li>	
+			<li style="text-transform: uppercase; font-size: 1.5vw; background-color: rgba(0,0,0,0.2); padding: 10px; ">Departments</li>
+					<li><a class="" href="CourseOffered.php">CITE</a></li>
+					<li><a class="" href="CMA.php">CMA</a></li>
+					<li><a class="" href="CEA.php">CEA</a></li>
+					<li><a class="" href="CHS.php">CHS</a></li>
+					<li class="active"><a class="" href="CSS.php">CSS</a></li>
+					<li><a class="" href="SHS.php">SHS</a></li>
+					<li><a class="" href="Admission.php">Admission Requirements</a></li>		
 	</li>
 		</ul></ul>
 	</div>
@@ -271,20 +274,31 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-8">
-				<h1 class="page-header"><p>College Programs of</p>College of Information Technology</h1>
+				<h1 class="page-header"><p> College Programs of</p>College of Social Sciences</h1>
 			</div>
 		</div>	
 
 		<div class="jumbotron">
-			<h3>Information Technology</h3>
-			<p style="font-size: 15px;">The BS Information Technology program provides students with skills and knowledge needed in relevant emerging high-growth areas in the industry. Through our program, we train students with the development and management of contemporary areas such as cloud computing and applications, analytics and data science, artificial intelligence, and the Internet of Things. We use a curriculum based on inputs and guidance from practicing industry experts.</p>
+			<h3>Communication</h3>
+			<p style="font-size: 15px;">The Bachelor of Arts in Communication program is a four-year course that hones students’ knowledge and skills necessary for a career in media, advertising, and public relations. Our program teaches students to conduct research, plan and implement campaigns and reports. By the end of the program, students should have the mastery of digital, print, and broadcast media. We also instill the values of authenticity, and integrity which they will need as they climb the career ladder in the field of communications.</p>
 		</div>
 		<div class="jumbotron">
-			<h3>Computer Science</h3>
-			<p style="font-size: 15px;">The Bachelor of Science in Computer Science (BSCS) program is a four-year program that provides students with a broad understanding of key principles and important applications in the field of computing. The students will be exposed to new technologies and techniques, which they can apply to devise new ways of using computers and to improve computers as tools for various applications.</p>
+			<h3>Political Science</h3>
+			<p style="font-size: 15px;">The Bachelor of Arts in Political Science program is a four-year degree course which provides students with a background in political history and theory, government systems and institutions, political behavior, local and global governance, and public management. Our program will also give students the opportunity to study areas of international relations and comparative politics. The AB Political Science also serves a preparatory program for a law degree.</p>
 		</div>
-
-
+		<div class="jumbotron">
+			<h3>Secondary Education</h3>
+			<h4>(Major in English, Math and Science)</h4>
+			<p style="font-size: 15px;">The Bachelor of Secondary Education program prepares students with the knowledge, skills, and values appropriate for a career in private and public secondary level school education. Our program also trains our students with motivation and competence as they learn the content and pedagogy of secondary education. Students have the option to major in English, Mathematics, or Science. After successfully completing all the program’s academic requirements, graduates of program should be able to practice the teaching profession in the secondary level.</p>
+		</div>
+		<div class="jumbotron">
+			<h3>Criminology</h3>
+			<p style="font-size: 15px;">The Bachelor of Science in Criminology program is a four-year course that provides students with knowledge and skills in forensic science, criminal jurisprudence, law enforcement, criminal investigation, and correctional administration. We train our students to be efficient and effective public safety and security while maintaining human rights. We also teach them the importance of nationalism and nation-building through protection.</p>
+		</div>
+		<div class="jumbotron">
+			<h3>Elementary Education</h3>
+			<p style="font-size: 15px;">The Bachelor of Elementary Education program prepares students with the knowledge, skills, and values appropriate for a career in private and public elementary school education. Our program also trains our students with motivation and competence as they learn the content and pedagogy of elementary education. Students can also major in preschool education. After successfully completing all the program’s academic requirements, graduates of program should be able to practice the teaching profession in the elementary level.</p>
+		</div>
 		
 		
 </body>

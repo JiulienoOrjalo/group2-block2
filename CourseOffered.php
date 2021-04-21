@@ -4,7 +4,7 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>UPangHub</title>
+	<title>UPang Hub</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -214,27 +214,24 @@
  			padding-bottom: 10px;
  			padding-left: 9px;
  			padding-right: 9px;
-
-
- 
 		}
-
 	</style>
 	
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 </head>
 <body>
 	<nav class="navbar navbar-custom navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<img src="logoorig.png"><a class="navbar-brand"></a>
-				<table>
-			<td><a href="index.html">Home</a></td>
-			<td><a href="compu_grade.html">Computation of Grades </a></td>
-			<td><a href="tuition_calculator.html">Computation of Tuition Fee </a></td>
-			<td><a href="CourseOffered.html"  class="active">Courses Offered </a></td>
-			<td><a href="gallery.html">Gallery</a></td>
+			<table>
+			<td><a href="index.php">Home</a></td>
+			<td><a href="compu_grade.php">Computation of Grades </a></td>
+			<td><a href="tuition_calculator.php">Computation of Tuition Fee </a></td>
+			<td><a href="CourseOffered.php"  class="active">Courses Offered </a></td>
+			<td><a href="gallery.php">Gallery</a></td>
+			<td><a href="user.php">User</a></td>
 		</table>
 			</div>
 		</div>
@@ -256,15 +253,16 @@
 			</div>
 			<div class="clear"></div>
 		</div>
+		
 		<ul class="nav menu">
-			<li style="text-transform: uppercase; font-size: 1.5vw; background-color: rgba(0,0,0,0.2); padding: 10px; ">Departments</li>
-					<li><a class="" href="CourseOffered.html">CITE</a></li>
-					<li><a class="" href="CMA.html">CMA</a></li>
-					<li><a class="" href="CEA.html">CEA</a></li>
-					<li class="active"><a class="" href="CHS.html">CHS</a></li>
-					<li><a class="" href="CSS.html">CSS</a></li>
-					<li><a class="" href="SHS.html">SHS</a></li>
-					<li><a class="" href="Admission.html">Admission Requirements</a></li>		
+			<li style="text-transform: uppercase; font-size: 1.5vw; background-color: rgba(0,0,0,0.2); padding: 10px;">Departments</li>
+					<li class="active"><a class="" href="CourseOffered.php">CITE</a></li>
+					<li><a class="" href="CMA.php">CMA</a></li>
+					<li><a class="" href="CEA.php">CEA</a></li>
+					<li><a class="" href="CHS.php">CHS</a></li>
+					<li><a class="" href="CSS.php">CSS</a></li>
+					<li><a class="" href="SHS.php">SHS</a></li>
+					<li><a class="" href="Admission.php">Admission Requirements</a></li>	
 	</li>
 		</ul></ul>
 	</div>
@@ -274,26 +272,21 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-8">
-				<h1 class="page-header"><p> College Programs of</p>College of Health Sciences</h1>
+				<h1 class="page-header"><p>College Programs of</p>College of Information Technology</h1>
 			</div>
 		</div>	
 
 		<div class="jumbotron">
-			<h3>Medical Laboratory Science</h3>
-			<p style="font-size: 15px;">The Bachelor of Science in Medical Laboratory Science is a four-year program that provides knowledge in the fields of Clinical Chemistry, Hematology, Microbiology, Immunohematology, Immunology and Serology, Urinalysis, Clinical Microscopy, Parasitology, Cytology, and Histopathology. During their fourth year, students undergo an internship program in a CHED-accredited training laboratory where they rotate between sections. Graduates of the program must take the board exams conducted by the Professional Regulation Commission to qualify as registered medical technologists.</p>
+			<h3>Information Technology</h3>
+			<p style="font-size: 15px;">The BS Information Technology program provides students with skills and knowledge needed in relevant emerging high-growth areas in the industry. Through our program, we train students with the development and management of contemporary areas such as cloud computing and applications, analytics and data science, artificial intelligence, and the Internet of Things. We use a curriculum based on inputs and guidance from practicing industry experts.</p>
 		</div>
 		<div class="jumbotron">
-			<h3>Nursing</h3>
-			<p style="font-size: 15px;">The BS Nursing program is a four-year course where we teach students nursing concepts alongside Related Learning Experiences (RLE). Through our outcome-based curriculum, we train students to become competent through simulated clinical and active learning activities. Our program also provides an intensive nursing practicum that will make our students skilled, refined, and worthy of entering the nursing profession.</p>
+			<h3>Computer Science</h3>
+			<p style="font-size: 15px;">The Bachelor of Science in Computer Science (BSCS) program is a four-year program that provides students with a broad understanding of key principles and important applications in the field of computing. The students will be exposed to new technologies and techniques, which they can apply to devise new ways of using computers and to improve computers as tools for various applications.</p>
 		</div>
-		<div class="jumbotron">
-			<h3>Pharmacy</h3>
-			<p style="font-size: 15px;">The Bachelor of Science in Pharmacy program is a four-year course which focuses on teaching necessary foundational knowledge for pharmaceutical product development.  Through our program, we teach students on the essentials of pharmaceutical chemistry, pharmaceutics, and the life sciences. During their fourth year, we will assign students to intern in various CHED-accredited affiliated establishments to learn about the rigors of pharmacy practice. Their internship will expose them to various practice areas and prepare them for the roles they may take on after graduation. Graduates of the BS Pharmacy program must take the board exams conducted by the Professional Regulation Commission to qualify as registered pharmacists.</p>
-		</div>
-		<div class="jumbotron">
-			<h3>Physical Therapy</h3>
-			<p style="font-size: 15px;">The Bachelor of Science in Physical Therapy program is a four-year degree course that provides students with medical knowledge and rehabilitation training necessary for their future profession. We hone their skills through simulated clinical and active learning activities in a dynamic learning community, under an outcomes-based curriculum. Through the course’s internship program, we assign students to different CHED-accredited affiliated center where they will interact with patients that have neurological, muscoskeletal, cardiopulmonary conditions in need of rehabilitation. Graduates of the BS Physical Therapy program must take the board exams conducted by the Professional Regulation Commission to qualify as Registered Physical Therapists.</p>
-		</div>
+
+
+		
 		
 </body>
 </html>

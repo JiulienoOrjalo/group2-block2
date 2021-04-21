@@ -217,6 +217,15 @@
 
 
  
+		}		
+		h2{
+			color: #977a00;
+		}
+		strong{
+			color: #2e3e1b;
+		}
+		h3{
+			color: #2e3e1b;
 		}
 
 	</style>
@@ -229,11 +238,12 @@
 			<div class="navbar-header">
 				<img src="logoorig.png"><a class="navbar-brand"></a>
 				<table>
-			<td><a href="index.html">Home</a></td>
-			<td><a href="compu_grade.html">Computation of Grades </a></td>
-			<td><a href="tuition_calculator.html">Computation of Tuition Fee </a></td>
-			<td><a href="CourseOffered.html"  class="active">Courses Offered </a></td>
-			<td><a href="gallery.html">Gallery</a></td>
+			<td><a href="index.php">Home</a></td>
+			<td><a href="compu_grade.php">Computation of Grades </a></td>
+			<td><a href="tuition_calculator.php">Computation of Tuition Fee </a></td>
+			<td><a href="CourseOffered.php"  class="active">Courses Offered </a></td>
+			<td><a href="gallery.php">Gallery</a></td>
+			<td><a href="user.php">User</a></td>
 		</table>
 			</div>
 		</div>
@@ -255,15 +265,16 @@
 			</div>
 			<div class="clear"></div>
 		</div>
+		
 		<ul class="nav menu">
-			<li style="text-transform: uppercase; font-size: 1.5vw; background-color: rgba(0,0,0,0.2); padding: 10px; ">Departments</li>
-					<li><a class="" href="CourseOffered.html">CITE</a></li>
-					<li><a class="" href="CMA.html">CMA</a></li>
-					<li><a class="" href="CEA.html">CEA</a></li>
-					<li><a class="" href="CHS.html">CHS</a></li>
-					<li class="active"><a class="" href="CSS.html">CSS</a></li>
-					<li><a class="" href="SHS.html">SHS</a></li>
-					<li><a class="" href="Admission.html">Admission Requirements</a></li>		
+			<li style="text-transform: uppercase; font-size: 1.5vw; background-color: rgba(0,0,0,0.2); padding: 10px;">Departments</li>
+					<li><a class="" href="CourseOffered.php">CITE</a></li>
+					<li><a class="" href="CMA.php">CMA</a></li>
+					<li><a class="" href="CEA.php">CEA</a></li>
+					<li><a class="" href="CHS.php">CHS</a></li>
+					<li><a class="" href="CSS.php">CSS</a></li>
+					<li><a class="" href="SHS.php">SHS</a></li>
+					<li class="active"><a class="" href="Admission.php">Admission Requirements</a></li>	
 	</li>
 		</ul></ul>
 	</div>
@@ -273,32 +284,46 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-8">
-				<h1 class="page-header"><p> College Programs of</p>College of Social Sciences</h1>
+				<h1 class="page-header">Admission Requirements</h1>
 			</div>
 		</div>	
-
 		<div class="jumbotron">
-			<h3>Communication</h3>
-			<p style="font-size: 15px;">The Bachelor of Arts in Communication program is a four-year course that hones students’ knowledge and skills necessary for a career in media, advertising, and public relations. Our program teaches students to conduct research, plan and implement campaigns and reports. By the end of the program, students should have the mastery of digital, print, and broadcast media. We also instill the values of authenticity, and integrity which they will need as they climb the career ladder in the field of communications.</p>
+			<h3>Official Enrollment Steps</h3>
+			<h2>01</h2>
+			<p><strong>MARKETING DEPARTMENT</strong><br>1.1 Fill up Student Permanent Record (SPR) & Info Sheet.<br>
+				1.2 Verification of Required Documents (if available):
+			<ol type="i">
+				<li>Form 138</li>
+				<li>NSO Birth Certificate</li>
+				<li>For Handog Kaibigan (HK) Scholars</li>
+				<ol type="I">
+					<li>HK Certificate</li>
+					<li>Certificate of Indigency</li>
+				</ol>
+			</ol>
+		</p>
+	</div>
+		<div class="jumbotron">
+			<h2>02</h2>
+		<p><strong>Advising</strong>(For Transferees only)<br>2.1 Go to the Dean's Office (See Dean or Program Head) for subject crediting</p>
 		</div>
 		<div class="jumbotron">
-			<h3>Political Science</h3>
-			<p style="font-size: 15px;">The Bachelor of Arts in Political Science program is a four-year degree course which provides students with a background in political history and theory, government systems and institutions, political behavior, local and global governance, and public management. Our program will also give students the opportunity to study areas of international relations and comparative politics. The AB Political Science also serves a preparatory program for a law degree.</p>
+		<h2>03</h2>
+		<p><strong>Registrar & Finance</strong><br>3.1 Submission of Remaining requirements:
+			<ol type="a">
+				<li>Form 138</li>
+				<li>NSO Birth Certificate</li>
+				<li>For Handog Kaibigan (HK) Scholars</li>
+				<ol type="i">
+					<li>HK Certificate</li>
+					<li>Certificate of Indigency</li>
+				</ol>
+			</ol><br>3.2 Downpayment<br>
+			<ol type="i">
+				<li> If enrollee has Slot Reservation:<br>Non-scholars: pay an additional P2,000.00 downpayment to get ID & 1 set of uniform For scholars: can pay P750.00 for ID or P1,500 for both ID & 1 set of uniform.</li>
+				<li>If enrollee has NO Slot Reservation:<br>Non-scholars: pay P2,500.00 downpayment to get ID & 1 set of uniform For HK scholars: can pay P750.00 for ID or P1,500 for both ID & 1 set of uniform</li>
+			</ol><br>3.3 Printing of Official Registration Form (ORF) or Temporary Registration Form (TRF) in case schedule is not yet ready.</p>
 		</div>
-		<div class="jumbotron">
-			<h3>Secondary Education</h3>
-			<h4>(Major in English, Math and Science)</h4>
-			<p style="font-size: 15px;">The Bachelor of Secondary Education program prepares students with the knowledge, skills, and values appropriate for a career in private and public secondary level school education. Our program also trains our students with motivation and competence as they learn the content and pedagogy of secondary education. Students have the option to major in English, Mathematics, or Science. After successfully completing all the program’s academic requirements, graduates of program should be able to practice the teaching profession in the secondary level.</p>
-		</div>
-		<div class="jumbotron">
-			<h3>Criminology</h3>
-			<p style="font-size: 15px;">The Bachelor of Science in Criminology program is a four-year course that provides students with knowledge and skills in forensic science, criminal jurisprudence, law enforcement, criminal investigation, and correctional administration. We train our students to be efficient and effective public safety and security while maintaining human rights. We also teach them the importance of nationalism and nation-building through protection.</p>
-		</div>
-		<div class="jumbotron">
-			<h3>Elementary Education</h3>
-			<p style="font-size: 15px;">The Bachelor of Elementary Education program prepares students with the knowledge, skills, and values appropriate for a career in private and public elementary school education. Our program also trains our students with motivation and competence as they learn the content and pedagogy of elementary education. Students can also major in preschool education. After successfully completing all the program’s academic requirements, graduates of program should be able to practice the teaching profession in the elementary level.</p>
-		</div>
-		
 		
 </body>
 </html>
