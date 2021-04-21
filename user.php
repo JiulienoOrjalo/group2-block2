@@ -1,4 +1,14 @@
-<?php include ('UP_server.php')?>
+<?php 
+session_start();
+if(!isset($_SESSION['username'])){
+  header('location:login.php');
+}else{
+  // header('location:user.php');
+  $expire = 365 * 24 * 3600; // We choose a one year duration
+    setcookie(session_name(), session_id(), time() + $expire);
+}
+
+?>
 <!doctype html>
 <html lang="en">
 <title>Users</title>
@@ -121,21 +131,28 @@
      <li class="nav-item">
         <a class="nav-link active" href="user.php" style="color: white;">User</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="logout.php" style="color: white;">Logout</a>
+      </li>
 
   </ul>
 </div>
 
   </div>
 </nav>
-   
-<div class="background" >
+
+<div class="background">
 <div class="container">
+
   <div class="row">
     <div class="container py-5"> 
        <br><br><br><br>
         <div class="card">  
             <div class="card-header bg-success text-white">  
-                <h4 class="text-uppercase text-center">Number of Users</h4>  
+                <h4 class="text-uppercase text-center">Number of Users</h4>
+                <?php 
+                  echo $_SESSION['sqlCheck'];
+                ?> 
             </div>  
             <div class="card-body"> 
 
@@ -161,7 +178,6 @@ else{
   $result = mysqli_query($connection, "SELECT * FROM tbl_account WHERE username LIKE '%$user%'");
   $rowcount = mysqli_num_rows($result);
 }
- 
 ?>
 
 
@@ -198,8 +214,10 @@ for ($i=1; $i<=$rowcount; $i++)
 </form>
 
             </div>  
-        </div>  
+        </div> 
+         
     </div>  
+    
   </div>
 </div>
 </div>

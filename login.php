@@ -1,4 +1,12 @@
-<?php include('UP_server.php');?>
+<?php 
+session_start();
+if(!isset($_SESSION['username'])){
+  echo "<script>alert('You're currently Logged in!');document.location='user.php'</script>";
+}else{
+  header('location:user.php');
+}
+
+?>
 <!doctype html>
 <html lang="en">
   <head>
