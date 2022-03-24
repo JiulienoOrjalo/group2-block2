@@ -1,3 +1,16 @@
+<?php 
+session_start();
+if(!isset($_SESSION['username'])){
+  header('location:login.php');
+}else{
+  // header('location:user.php');
+  $expire = 365 * 24 * 3600; // We choose a one year duration
+    setcookie(session_name(), session_id(), time() + $expire);
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
